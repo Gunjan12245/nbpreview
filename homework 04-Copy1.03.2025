@@ -1,0 +1,1810 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "id": "4219ca91-a8ac-47a4-b65a-fd5a10468560",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "My name is gunjan\n"
+     ]
+    }
+   ],
+   "source": [
+    "x= 'my name is gunjan'\n",
+    "print(x.capitalize())"
+   ]
+  },
+  {
+   "cell_type": "raw",
+   "id": "109f8d60-aacc-4e79-8b7f-e2043b525aaf",
+   "metadata": {},
+   "source": [
+    "x= 'MY NAME IS GUNJAN'"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "id": "a8f60d40-800f-4c53-9f60-4a2a6fcc5821",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "my name is gunjan\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(x.casefold())"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 20,
+   "id": "b3495202-3703-4eda-9171-4cee88583345",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "**gunjan**\n"
+     ]
+    }
+   ],
+   "source": [
+    "x= 'gunjan'\n",
+    "print(x.center(10,'*'))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 24,
+   "id": "e711b22b-a5fa-4e5e-bb51-3891f97fb661",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "2\n"
+     ]
+    }
+   ],
+   "source": [
+    "x= 'MY NAME IS GUNJAN. MY NAME IS GUNJAN'\n",
+    "print(x.count('GUNJAN'))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 30,
+   "id": "c8e34bc4-42f1-4508-8f35-ade127813e7d",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1\n"
+     ]
+    }
+   ],
+   "source": [
+    "x= 'MY NAME IS GUNJAN. MY NAME IS GUNJAN'\n",
+    "print(x.count('GUNJAN', 4, 18))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 32,
+   "id": "25edf190-77d4-4156-8ab6-7c8af9b8224f",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "11\n"
+     ]
+    }
+   ],
+   "source": [
+    "x= 'MY NAME IS GUNJAN. MY NAME IS GUNJAN'\n",
+    "print(x.find('GUNJAN'))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 42,
+   "id": "22775d93-9fd3-4e5c-8773-d629e911e029",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "11\n"
+     ]
+    }
+   ],
+   "source": [
+    "x= 'MY NAME IS GUNJAN. MY NAME IS GUNJAN'\n",
+    "print(x.find('GUNJAN', 10, 40))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 44,
+   "id": "d1aca5ba-d779-4eec-984a-f60886629fad",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "True\n"
+     ]
+    }
+   ],
+   "source": [
+    "x= 'MY NAME IS GUNJAN. MY NAME IS GUNJAN'\n",
+    "print(x.endswith('GUNJAN'))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 46,
+   "id": "01f6dd73-a0cc-4e49-95a0-cd0a45c67d3a",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "False\n"
+     ]
+    }
+   ],
+   "source": [
+    "x= 'MY NAME IS GUNJAN. MY NAME IS GUNJAN'\n",
+    "print(x.endswith('my'))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 50,
+   "id": "579138a3-e349-41b1-b4c1-8e699b65fffd",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "True\n"
+     ]
+    }
+   ],
+   "source": [
+    "x= 'MY NAME IS GUNJAN. MY NAME IS GUNJAN'\n",
+    "print(x.endswith('GUNJAN', 11, 17))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 52,
+   "id": "d180181d-7340-4056-af33-b18f4a89fd4b",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "g       u       n       j       a       n       \n"
+     ]
+    }
+   ],
+   "source": [
+    "x= 'g\\tu\\tn\\tj\\ta\\tn\\t'\n",
+    "print(x.expandtabs())"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 54,
+   "id": "5b5be2b8-fc22-40bd-9e61-98c15614413e",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "g  u  n  j  a  n  \n"
+     ]
+    }
+   ],
+   "source": [
+    "x= 'g\\tu\\tn\\tj\\ta\\tn\\t'\n",
+    "print(x.expandtabs(3))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 66,
+   "id": "ae4adf67-c34e-4ed5-bce1-7aefd02ce24d",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "11\n",
+      "11\n"
+     ]
+    }
+   ],
+   "source": [
+    "x= 'MY NAME IS GUNJAN. MY NAME IS GUNJAN'\n",
+    "print(x.index('G'))\n",
+    "print(x.index('G', 7, 17))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 68,
+   "id": "18da90f0-1df7-4089-9173-899b86d6daf6",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "True\n"
+     ]
+    }
+   ],
+   "source": [
+    "x= 'gunjan02'\n",
+    "print(x.isalnum())"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 72,
+   "id": "1347db47-e172-4ec0-9f6d-88f605d16b8d",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "True\n"
+     ]
+    }
+   ],
+   "source": [
+    "x= 'gunjan'\n",
+    "print(x.isalpha())"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 74,
+   "id": "2ae65dd8-7f1f-4ce1-971d-419ef4494f93",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "True\n"
+     ]
+    }
+   ],
+   "source": [
+    "x= '25'\n",
+    "print(x.isdecimal())"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 76,
+   "id": "49ecf17d-2ab8-462d-8992-b6a66a6b6afd",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "True\n"
+     ]
+    }
+   ],
+   "source": [
+    "x= '22'\n",
+    "print(x.isdecimal())"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 78,
+   "id": "23123cce-4be3-490d-bbfb-ce026e0cfcff",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "False\n"
+     ]
+    }
+   ],
+   "source": [
+    "x= '22c236'\n",
+    "print(x.isdigit())"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 84,
+   "id": "a263fcf5-569c-4c37-9c73-b36160806b62",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "True\n"
+     ]
+    }
+   ],
+   "source": [
+    "x= 'gunja12'\n",
+    "print(x.isidentifier())"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 86,
+   "id": "17595abe-3493-40a6-a8f1-ea94af4f46c0",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "True\n"
+     ]
+    }
+   ],
+   "source": [
+    "x= 'gunjan'\n",
+    "print(x.islower())"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 88,
+   "id": "6d05a831-a242-4390-8842-7f5e8e284b37",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "True\n"
+     ]
+    }
+   ],
+   "source": [
+    "x= '25'\n",
+    "print(x.isnumeric())"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 90,
+   "id": "c480ca07-a7b5-423c-aac7-6429661da6eb",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "True\n"
+     ]
+    }
+   ],
+   "source": [
+    "x= 'gunjan'\n",
+    "print(x.isprintable())"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 94,
+   "id": "c6442995-dc68-4948-908f-7e8969d3df6a",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "True\n"
+     ]
+    }
+   ],
+   "source": [
+    "x= '  '\n",
+    "print(x.isspace())"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 96,
+   "id": "0ece60b9-dfc1-4291-aba2-672154f919b6",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "False\n"
+     ]
+    }
+   ],
+   "source": [
+    "x= 'gunjan'\n",
+    "print(x.istitle())"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 98,
+   "id": "bd28b1a1-f560-46e7-ae5b-18c0b227f177",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "True\n"
+     ]
+    }
+   ],
+   "source": [
+    "x= 'Gunjan'\n",
+    "print(x.istitle())"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 100,
+   "id": "f93be697-8433-4405-9a78-395fb8cdd46d",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "True\n"
+     ]
+    }
+   ],
+   "source": [
+    "x= 'MY NAME IS GUNJAN. MY NAME IS GUNJAN'\n",
+    "print(x.isupper())"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 104,
+   "id": "d966ee8d-421c-414e-aa9e-145e3945526c",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "MY**NAME**IS**GUNJAN\n"
+     ]
+    }
+   ],
+   "source": [
+    "x= 'MY', 'NAME', 'IS', 'GUNJAN'\n",
+    "sep= '**'\n",
+    "print(sep.join(x))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 108,
+   "id": "f54803d4-4530-4b7b-8a6f-f91113bc189f",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "my name is gunjan. my name is gunjan\n"
+     ]
+    }
+   ],
+   "source": [
+    "x= 'MY NAME IS GUNJAN. MY NAME IS GUNJAN'\n",
+    "print(x.lower())"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 118,
+   "id": "c25bb9b1-7ce8-4043-9237-e7cca418cd8b",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "MY NAME IS GUNJAN\n"
+     ]
+    }
+   ],
+   "source": [
+    "x= '***************MY NAME IS GUNJAN'\n",
+    "print(x.lstrip('*'))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 120,
+   "id": "0c712d15-23d5-4fe6-b37e-06c58a4abb5c",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "MY NAME IS SUPRIYA. MY NAME IS SUPRIYA\n"
+     ]
+    }
+   ],
+   "source": [
+    "x= 'MY NAME IS GUNJAN. MY NAME IS GUNJAN'\n",
+    "print(x.replace('GUNJAN', 'SUPRIYA', 2))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 122,
+   "id": "950efc21-cd4f-49dc-be1d-e02de7ec6943",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "MY NAME IS SUPRIYA\n"
+     ]
+    }
+   ],
+   "source": [
+    "x= 'MY NAME IS GUNJAN'\n",
+    "print(x.replace('GUNJAN', 'SUPRIYA'))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 154,
+   "id": "dfcc3d4c-ac00-44cb-a398-300545cd30fd",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "IndentationError",
+     "evalue": "unexpected indent (1107673916.py, line 2)",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;36m  Cell \u001b[1;32mIn[154], line 2\u001b[1;36m\u001b[0m\n\u001b[1;33m    print(name)\u001b[0m\n\u001b[1;37m    ^\u001b[0m\n\u001b[1;31mIndentationError\u001b[0m\u001b[1;31m:\u001b[0m unexpected indent\n"
+     ]
+    }
+   ],
+   "source": [
+    "name = ['Gunjan','Riya','Suman','Shanti',1,2,3,True]\n",
+    "       print(name)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 146,
+   "id": "1c59d5c7-bfff-4025-a361-2916ee742dce",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "SyntaxError",
+     "evalue": "unterminated string literal (detected at line 1) (2966829513.py, line 1)",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;36m  Cell \u001b[1;32mIn[146], line 1\u001b[1;36m\u001b[0m\n\u001b[1;33m    name = ['Gunjan, 'Riya', 'Suman',1,2,3,True]\u001b[0m\n\u001b[1;37m                                   ^\u001b[0m\n\u001b[1;31mSyntaxError\u001b[0m\u001b[1;31m:\u001b[0m unterminated string literal (detected at line 1)\n"
+     ]
+    }
+   ],
+   "source": [
+    "name = ['Gunjan, 'Riya', 'Suman',1,2,3,True]\n",
+    "       print(name)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 158,
+   "id": "f064a68e-259c-4376-8c1c-46576de2b17f",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "name = ['Gunjan','Riya','Suman','Shanti',1,2,3,True]\n",
+    "       "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 160,
+   "id": "62b9e208-2a6d-46c8-ba17-890563e096aa",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['Gunjan', 'Riya', 'Suman', 'Shanti', 1, 2, 3, True]\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(name)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 162,
+   "id": "48a22afe-aaa3-4984-894d-5da122d77d59",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "name[1] = 'Sneha'"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 164,
+   "id": "ad6d68da-162a-49f3-b0a8-d27af090bc75",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['Gunjan', 'Sneha', 'Suman', 'Shanti', 1, 2, 3, True]\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(name)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 166,
+   "id": "88bf0676-03f6-4d47-97fe-6d6fd58b9c5a",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "name[-1] = False"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 168,
+   "id": "e9ae0053-173b-42fb-8799-65c7650a97b6",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "['Gunjan', 'Sneha', 'Suman', 'Shanti', 1, 2, 3, False]"
+      ]
+     },
+     "execution_count": 168,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "name"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 176,
+   "id": "93892591-ce46-4f15-9a9b-11b4bcd7ad3f",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[1, 2, 3]"
+      ]
+     },
+     "execution_count": 176,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "name[4:7]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 184,
+   "id": "3d6e71ca-be32-4c03-a545-366319fd260e",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "['Sneha', 'Suman']"
+      ]
+     },
+     "execution_count": 184,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "name[-7:3]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 186,
+   "id": "6b3f5b85-3627-40ef-8b65-02c93bef6690",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "['Suman', 'Shanti']"
+      ]
+     },
+     "execution_count": 186,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "name[-6:-4]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 188,
+   "id": "bffab0c5-875b-4ebf-af37-d77f20bc70a4",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[False, 3, 2, 1, 'Shanti', 'Suman', 'Sneha', 'Gunjan']"
+      ]
+     },
+     "execution_count": 188,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "name[::-1]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 190,
+   "id": "fd2b7dc1-5edf-49c1-9577-0061514b11ac",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "name.append('data')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 192,
+   "id": "09f35556-ac19-46ce-babc-76dd28c4b865",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['Gunjan', 'Sneha', 'Suman', 'Shanti', 1, 2, 3, False, 'data']\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(name)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 198,
+   "id": "da5b8e93-c5b4-4484-b6e2-d5478bcb6bfb",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "name.append(['rosie',' simon'])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 200,
+   "id": "7aed7f37-0042-4983-8182-77b5b3f93023",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['Gunjan', 'Sneha', 'Suman', 'Shanti', 1, 2, 3, False, 'data', ['rosie', ' simon']]\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(name)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 202,
+   "id": "cd8b2681-647e-4c83-affe-6fb25b682b97",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'rosie'"
+      ]
+     },
+     "execution_count": 202,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "name[9][0]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 204,
+   "id": "57d2b9f7-cdf9-4b36-b7f1-ed0148374416",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "name.insert(3,'bag')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 208,
+   "id": "0d963f31-c5f3-4169-a630-2ccbbfb21acf",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['Gunjan', 'Sneha', 'Suman', 'bag', 'Shanti', 1, 2, 3, False, 'data', ['rosie', ' simon']]\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(name)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 210,
+   "id": "03c2c70f-c622-4539-a717-94121c26b2d6",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "['rosie', ' simon']"
+      ]
+     },
+     "execution_count": 210,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "name.pop()"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "4e989495-2f4e-4602-91d5-3585cfa71474",
+   "metadata": {},
+   "source": [
+    "print(name)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 213,
+   "id": "256c93a2-c908-492d-9d8d-799298bcafd8",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['Gunjan', 'Sneha', 'Suman', 'bag', 'Shanti', 1, 2, 3, False, 'data']\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(name)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 215,
+   "id": "6a89d8fc-46bb-4170-b6e3-6d23c325989f",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'Suman'"
+      ]
+     },
+     "execution_count": 215,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "name.pop(2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 217,
+   "id": "d7cd6eb6-9374-44c8-902d-27b202f67dc0",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['Gunjan', 'Sneha', 'bag', 'Shanti', 1, 2, 3, False, 'data']\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(name)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 227,
+   "id": "02272ed7-941a-47b9-b943-800b34d4b987",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "name.append('data')\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 221,
+   "id": "2033e3cb-2f46-4aae-9c69-368892bb58b6",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "x = name\n",
+    "y= name.copy()\n",
+    "z = name[:]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 229,
+   "id": "35a05466-4d79-4ee3-be4f-5a1304edcb88",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['Gunjan', 'Sneha', 'bag', 'Shanti', 1, 2, 3, False, 'data', 'lima', 'lima', 'data']\n",
+      "['Gunjan', 'Sneha', 'bag', 'Shanti', 1, 2, 3, False, 'data', 'lima', 'lima', 'data']\n",
+      "['Gunjan', 'Sneha', 'bag', 'Shanti', 1, 2, 3, False, 'data', 'lima']\n",
+      "['Gunjan', 'Sneha', 'bag', 'Shanti', 1, 2, 3, False, 'data', 'lima']\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(name)\n",
+    "print(x)\n",
+    "print(y)\n",
+    "print(z)\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 231,
+   "id": "56ad1f67-ac79-4bfd-9dfe-483222ce6146",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "1"
+      ]
+     },
+     "execution_count": 231,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "name.count('Sneha')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 233,
+   "id": "d8821ad5-3743-47a5-a15c-8d700288bbaa",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "name.extend(['suma','rina'])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 235,
+   "id": "7cc5e0a0-6404-4325-80b6-732ba8106cc4",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['Gunjan', 'Sneha', 'bag', 'Shanti', 1, 2, 3, False, 'data', 'lima', 'lima', 'data', 'suma', 'rina']\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(name)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 237,
+   "id": "6e3ffb15-92b2-4121-bf40-e2a6a8f1696e",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "4"
+      ]
+     },
+     "execution_count": 237,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "name.index(1)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "cd780866-8f58-41e0-b1a6-060005e65ac5",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "600.0"
+      ]
+     },
+     "execution_count": 3,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "(100*150)/25"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "97fd282b-d943-4b67-a03b-531641dede39",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "i am learning python\n",
+      "hello world\n"
+     ]
+    }
+   ],
+   "source": [
+    "\n",
+    "print('i am learning python')\n",
+    "print('hello world')\n",
+    " "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "5ea0e9e3-5592-4e9f-af3a-dd181bbeacd2",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "<class 'int'>\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(type(11))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "id": "319d8ab1-49da-48b1-b483-f668adc110d7",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "<class 'float'>\n",
+      "<class 'str'>\n",
+      "<class 'bool'>\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(type(11.234))\n",
+    "print(type('gunjan'))\n",
+    "print(type(True))\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "id": "e448f71a-3b48-4e72-a8a4-d3f9640bc49c",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "<class 'complex'>\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(type(2+5j))\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "id": "838f90b7-0172-47ec-9435-0efdc318e6b6",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "int"
+      ]
+     },
+     "execution_count": 13,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "type(int(22.5))\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "id": "66bdc079-284d-4523-aae4-1ba07cd31a87",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "name = 'gunjan'"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "id": "da2ff0c2-36eb-4f55-b09b-6c2879286704",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "gunjan\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(name)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "id": "1ac4ce98-534c-4e45-9f76-7d7784bd89e9",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "Name = 'gunjan'\n",
+    "salary = 20000\n",
+    "pass_marks = True"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "id": "5edff161-11f0-49ba-b47f-18d7f79292a2",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "gunjan\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(Name)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 23,
+   "id": "14d03cb7-3396-4a5b-aeba-4cb264a95a0a",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "int"
+      ]
+     },
+     "execution_count": 23,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "type(salary)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 25,
+   "id": "73da2a22-34f5-49e1-aaf8-71a0718f2226",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "lst = [1,2,3,4,5]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 27,
+   "id": "8f60b8cb-9872-44de-acec-e351a69a4786",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "t = (12,12,13,14,'gunjan',12.5)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 29,
+   "id": "b8b2a37c-76e4-4486-b922-17b3f1718556",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "tuple"
+      ]
+     },
+     "execution_count": 29,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "type(t)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 31,
+   "id": "0d5c2eca-3310-4391-a9c6-fc999bd7c510",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "2"
+      ]
+     },
+     "execution_count": 31,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "t.count(12)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 33,
+   "id": "e8ab093e-cf69-422d-b2e3-3f221f66ca72",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "4"
+      ]
+     },
+     "execution_count": 33,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "t.index('gunjan')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 35,
+   "id": "813cc018-a4de-4e51-8fe0-78d3357bf3c2",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "fruit= ('mango','apple','banana','banana','apple')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 37,
+   "id": "d02ed30d-c1e4-4d97-b64c-8693d8d57e3e",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "('mango', 'apple', 'banana', 'banana', 'apple')\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(fruit)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 39,
+   "id": "118cf4a7-1215-4595-9bc6-456e3401c1eb",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "('banana', 'banana', 'apple')"
+      ]
+     },
+     "execution_count": 39,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "fruit[2:]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 41,
+   "id": "a2285b87-ef2f-4070-bcdd-b5d3f77e1787",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "2"
+      ]
+     },
+     "execution_count": 41,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "fruit.count('banana')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 43,
+   "id": "4d1a9e04-7225-4d14-9842-a58aff203148",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'apple'"
+      ]
+     },
+     "execution_count": 43,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "fruit[1]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 45,
+   "id": "a3d20421-ba18-47e3-b7c0-6cea8ee5daad",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'banana'"
+      ]
+     },
+     "execution_count": 45,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "fruit[-2]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 47,
+   "id": "ff244335-d1d6-4b0b-aa72-ccc60fdf01ae",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "tup1 = (1,2,3,4,5)\n",
+    "tup2 = (6,7,8,9)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 49,
+   "id": "f82de29c-373e-43c2-8de3-deb7b248061d",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "(1, 2, 3, 4, 5, 6, 7, 8, 9)\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(tup1+tup2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 51,
+   "id": "f8d2db6a-6d46-4055-a73a-a21cd9b4143f",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "(1, 2, 3, 4, 5, 1, 2, 3, 4, 5, 1, 2, 3, 4, 5, 1, 2, 3, 4, 5)\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(tup1*4)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 53,
+   "id": "9a7e89f2-6727-4812-9420-8b19de7eabcb",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "tup3 = (tup1+tup2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 55,
+   "id": "7040aa96-f1af-4aa6-a6b2-530505879ebb",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "(1, 2, 3, 4, 5, 6, 7, 8, 9)\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(tup3)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 57,
+   "id": "b3098870-f14d-4d9f-912e-b64ef63f020b",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "tup4 = (tup3*2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 59,
+   "id": "27af70f0-8a46-4fb5-bdd6-8b962fb17688",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "(1, 2, 3, 4, 5, 6, 7, 8, 9, 1, 2, 3, 4, 5, 6, 7, 8, 9)\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(tup4)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 61,
+   "id": "de1660b6-bda7-4aba-9667-37460f2af360",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "('mango', 'apple', 'banana', 'banana', 'apple')\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(fruit)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 63,
+   "id": "3f4996e9-09cc-434f-8c57-8f3ae1172870",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['mango', 'apple', 'banana', 'banana', 'apple']\n"
+     ]
+    }
+   ],
+   "source": [
+    "lst = list(fruit)\n",
+    "print(lst)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 65,
+   "id": "c834c070-72e7-4ed8-903e-35dde491bb68",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "('mango', 'Apple', 'banana', 'banana', 'apple')\n"
+     ]
+    }
+   ],
+   "source": [
+    "lst.pop(1)\n",
+    "lst.insert(1,'Apple')\n",
+    "fruit = tuple(lst)\n",
+    "print(fruit)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 67,
+   "id": "f3fd4c04-9e56-4d4d-9461-385f74f5d8ef",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "set1 = {'mango','banana','orange','Orange','banana'}"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 69,
+   "id": "7cd019d7-2593-4c3b-b187-a685a4425ed4",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{'banana', 'mango', 'orange', 'Orange'}\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(set1)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 71,
+   "id": "d89bf253-bfe2-4370-a6f2-91b9a03a4223",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{1, 2, 3, 4, 5, 6, 8, 9}\n"
+     ]
+    }
+   ],
+   "source": [
+    "x= {2,3,5,6,8,9,4,1}\n",
+    "print(x)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 73,
+   "id": "b3606285-74fb-41af-a7c0-1fcce3b5444a",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "data = (\"Sourav\",25,\"Kolkata\")\n",
+    "name, age, city = data\n",
+    " "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "cedba1cd-062c-476d-8464-15d22a9bc568",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 75,
+   "id": "5d2a6370-df2c-42c3-a689-3dba3da02d3e",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Sourav 25 Kolkata\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(name, age, city)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "b93f488a-4fd5-4d82-936b-40bbc88966ff",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "116a084d-b968-4ab6-8e8c-15bc6540070d",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "c5dc24fc-4614-44e1-83e7-c5def1020051",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python [conda env:base] *",
+   "language": "python",
+   "name": "conda-base-py"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.12.7"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
